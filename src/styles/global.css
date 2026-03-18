@@ -1,0 +1,178 @@
+/* Reset */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f4f6f9 0%, #e2e8f0 100%);
+  color:#333;
+  min-height:100vh;
+}
+
+h2, h3 {
+  color: #1e3a5f;
+}
+
+
+/* Container */
+
+.page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  width: 100%;
+}
+
+/* Card UI */
+
+.card {
+  background: white;
+  padding: 35px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+/* Title */
+
+.page-title{
+text-align:center;
+margin-bottom:25px;
+color:#1e3a5f;
+}
+
+/* Form Elements */
+
+.form-group{
+margin-bottom:15px;
+}
+
+label{
+font-weight:600;
+display:block;
+margin-bottom:5px;
+}
+
+input,
+select{
+width:100%;
+padding:9px;
+border-radius:6px;
+border:1px solid #d1d5db;
+font-size:14px;
+}
+
+input:focus,
+select:focus{
+outline:none;
+border-color:#2563eb;
+box-shadow:0 0 4px rgba(37,99,235,0.3);
+}
+
+/* Buttons */
+
+.btn{
+width:100%;
+padding:10px;
+border:none;
+border-radius:7px;
+background:#2563eb;
+color:white;
+font-size:15px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#1d4ed8;
+}
+
+/* Secondary button */
+
+.btn-secondary{
+background:#10b981;
+}
+
+.btn-secondary:hover{
+background:#059669;
+}
+
+/* Upload box */
+
+.upload-box{
+border:2px dashed #cbd5e1;
+padding:25px;
+text-align:center;
+border-radius:10px;
+background:#f8fafc;
+margin-bottom:20px;
+}
+
+/* Bloom section */
+
+.bloom-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:10px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 480px) {
+  .card {
+    padding: 20px;
+    max-width: 100%;
+  }
+  
+  .page-wrapper {
+    padding: 15px;
+  }
+  
+  input, select {
+    font-size: 16px;
+    padding: 10px 8px;
+  }
+  
+  .btn {
+    padding: 12px;
+    font-size: 14px;
+  }
+  
+  .page-title {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .card {
+    padding: 30px;
+    max-width: 90%;
+  }
+  
+  .page-wrapper {
+    padding: 20px;
+  }
+}
+
+@media (min-width: 769px) {
+  .card {
+    padding: 35px;
+    max-width: 500px;
+  }
+  
+  .page-wrapper {
+    padding: 30px;
+  }
+}

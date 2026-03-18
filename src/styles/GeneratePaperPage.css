@@ -1,0 +1,44 @@
+.bloom-title {
+  margin: 20px 0 10px 0;
+  font-weight: 600;
+  color: #374151;
+}
+
+.generate-btn {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.bloom-section {
+  margin-top: 10px;
+}
+
+.bloom-section .form-group {
+  width: 100%;
+}
+
+/* Responsive grid for bloom inputs */
+@media (max-width: 480px) {
+  .bloom-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .bloom-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+
+@media (min-width: 769px) {
+  .bloom-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+  }
+}
+

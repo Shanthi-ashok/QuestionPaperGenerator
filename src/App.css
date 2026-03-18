@@ -1,0 +1,34 @@
+/* App Root Styling */
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Responsive container */
+@media (max-width: 480px) {
+  #root {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  #root {
+    font-size: 15px;
+  }
+}
+
+/* Prevent horizontal scroll */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+

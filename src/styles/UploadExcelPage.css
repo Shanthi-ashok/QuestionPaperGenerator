@@ -1,0 +1,45 @@
+.upload-title{
+  text-align:center;
+  margin-bottom:20px;
+  color:#1e3a5f;
+  font-size:1.8rem;
+}
+
+.file-input{
+  margin-top:10px;
+  width:100%;
+  padding:10px;
+  border:1px solid #d1d5db;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+.upload-success{
+  margin-top:10px;
+  color:green;
+  font-weight:500;
+  text-align:center;
+}
+
+.btn {
+  margin-top: 15px;
+  width:100%;
+}
+
+/* Responsive upload page */
+@media (max-width:480px){
+  .upload-title{
+    font-size:1.5rem;
+  }
+  
+  .file-input{
+    padding:8px;
+    font-size:14px;
+  }
+}
+
+@media (min-width:481px) and (max-width:768px){
+  .upload-title{
+    font-size:1.6rem;
+  }
+}

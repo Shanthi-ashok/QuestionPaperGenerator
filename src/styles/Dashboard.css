@@ -1,0 +1,40 @@
+.dashboard-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.dashboard-buttons a {
+  width: 100%;
+}
+
+.dashboard-buttons .btn {
+  width: 100%;
+}
+
+/* Responsive dashboard buttons */
+@media (min-width: 481px) {
+  .dashboard-buttons {
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+  .dashboard-buttons a {
+    flex: 1;
+  }
+  
+  .dashboard-buttons .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-buttons {
+    gap: 12px;
+  }
+  
+  .dashboard-buttons .btn {
+    padding: 12px;
+    font-size: 14px;
+  }
+}

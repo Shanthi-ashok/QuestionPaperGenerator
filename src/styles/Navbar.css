@@ -1,0 +1,87 @@
+/* Responsive horizontal navbar */
+.navbar{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 15px;
+  background:#2563eb;
+  color:white;
+  min-height:60px;
+  box-shadow:0 2px 4px rgba(0,0,0,0.1);
+  width:100%;
+  flex-wrap:wrap;
+}
+
+.nav-brand{
+  font-weight:700;
+  font-size:1.1rem;
+  white-space:nowrap;
+}
+
+.nav-links{
+  display:flex;
+  gap:0.8rem;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+.nav-links a{
+  color:white;
+  text-decoration:none;
+  padding:6px 10px;
+  border-radius:6px;
+  transition:background 0.2s;
+  white-space:nowrap;
+  font-size:0.95rem;
+}
+
+.nav-links a:hover{
+  background:rgba(255,255,255,0.2);
+}
+
+.logout-btn{
+  padding:6px 10px;
+  font-size:0.85rem;
+}
+
+/* Mobile navbar - extra small */
+@media (max-width:480px){
+  .navbar{
+    flex-direction:column;
+    gap:8px;
+    padding:10px;
+    min-height:auto;
+  }
+  
+  .nav-brand{
+    font-size:1rem;
+  }
+  
+  .nav-links{
+    width:100%;
+    justify-content:center;
+    gap:0.5rem;
+  }
+  
+  .nav-links a{
+    padding:4px 8px;
+    font-size:0.8rem;
+  }
+  
+  .logout-btn{
+    padding:4px 8px;
+    font-size:0.75rem;
+  }
+}
+
+/* Tablet navbar */
+@media (min-width:481px) and (max-width:768px){
+  .nav-brand{
+    font-size:1rem;
+  }
+  
+  .nav-links a{
+    padding:5px 8px;
+    font-size:0.9rem;
+  }
+}
